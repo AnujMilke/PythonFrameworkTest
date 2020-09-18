@@ -2,6 +2,7 @@ import openpyxl
 
 class TestExcelDemo:
     def testreadExcelData(self):
+        print("This is test data utility")
         book = openpyxl.load_workbook("C:\\Users\\Public\\Automation\\E2EAutomationData.xlsx")
         sheet = book.active
         cell = sheet.cell(row=1, column=2)
